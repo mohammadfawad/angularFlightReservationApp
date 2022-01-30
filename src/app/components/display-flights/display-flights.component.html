@@ -1,0 +1,40 @@
+
+<div class="jumbotron">
+
+  <div class="row g-3 align-items-center">
+
+  <div class="col-sm-12">
+      <div class="row g-3 align-items-center">
+        <h3 style="text-align: center;">Available Flights</h3>
+
+          <table class="table table-bordered" >
+            <thead>
+              <tr>
+                <th scope="col">Flight Number</th>
+                <th scope="col">Operating Airlines</th>
+                <th scope="col">Departure City</th>
+                <th scope="col">Arrival City</th>
+                <th scope="col">Departure Date</th>
+                <th scope="col">Estimated Departure Time</th>
+                <th scope="col">Select</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let flight of flights()">
+                  <td>{{flight.flightNumber}}</td>
+                  <td>{{flight.operatingAirlines}}</td>
+                  <td>{{flight.departureCity}}</td>
+                  <td>{{flight.arrivalCity}}</td>
+                  <td>{{flight.dateOfDeparture}}</td>
+                  <td>{{flight.estimatedDepartureTime}}</td>
+                  <td> <a href="passengerDetails/{{flight.flightId}}"><button class="btn btn-primary mb-2" >Select</button></a></td>
+                </tr>
+
+            </tbody>
+          </table>
+
+  </div>
+</div>
+
+

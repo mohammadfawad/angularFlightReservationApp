@@ -2,12 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularFlightReservation</title>
+  <title>Angular Flight Reservation Application</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+<bodystyle="background-color: #222221 ;">
+
+  <div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<div class="jumbotron text-center">
+  <h1>Angular Flight Reservation Application</h1>
+  <p>Flight Searching and Reservation</p>
+</div>
+
+<div class="container">
+  <div class="row justify-content-md-center">
+
+    <div class="col-sm-12">
+      <ng-container>
+        <app-find-flights></app-find-flights>
+      </ng-container>
+
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div class="jumbotron">
+        <div class="row g-3 align-items-center">
+          <h3 style="text-align: center;">Personel Details</h3>
+          <ul class="list-group">
+            <li class="list-group-item "><h5>firstName : </h5></li>
+
+          </ul>
+        </div>
+        <div class="alert alert-info"></div>
+      </div>
+    </div> -->
+
+
+  </div>
+</div>
+
 </body>
 </html>
+
+

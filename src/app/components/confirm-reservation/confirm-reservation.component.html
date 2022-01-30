@@ -1,0 +1,93 @@
+
+<div class="jumbotron">
+
+  <div class="row g-3 align-items-center">
+
+    <div class="col-sm-12">
+        <div class="row g-3 align-items-center">
+          <h3 style="text-align: center;">Complete Reservation, Passenger and Flight Details</h3>
+          <h4 style="text-align: center;">Reservation Details</h4>
+
+            <table class="table table-bordered" >
+              <thead>
+                <tr>
+                  <th scope="col">Reservation Id</th>
+                  <th scope="col">Reservation CheckedIn</th>
+                  <th scope="col">ReservationNumber Of Bags</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                    <td>{{reservationData.reservationId}}</td>
+                    <td>{{reservationData.reservationCheckedIn}}</td>
+                    <td>{{reservationData.reservationNumberOfBags}}</td>
+                    </tr>
+
+              </tbody>
+            </table>
+
+            <h4 style="text-align: center;">Passenger Details</h4>
+
+            <table class="table table-bordered" >
+              <thead>
+                <tr>
+                  <th scope="col">Passenger Id</th>
+                  <th scope="col">Passenger FirstName</th>
+                  <th scope="col">Passenger MiddleName</th>
+                  <th scope="col">Passenger LastName</th>
+                  <th scope="col">Passenger Email</th>
+                  <th scope="col">Passenger Phone</th>
+
+                </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                    <td>{{reservationData.reservationPassengerId.passengerId}}</td>
+                    <td>{{reservationData.reservationPassengerId.passengerFirstName}}</td>
+
+                    <td>{{reservationData.reservationPassengerId.passengerMiddleName}}</td>
+                    <td>{{reservationData.reservationPassengerId.passengerLastName}}</td>
+
+                    <td>{{reservationData.reservationPassengerId.passengerEmail}}</td>
+                    <td>{{reservationData.reservationPassengerId.passengerPhone}}</td>
+                  </tr>
+
+              </tbody>
+            </table>
+
+            <h4 style="text-align: center;">Flights Details</h4>
+
+            <table class="table table-bordered" >
+              <thead>
+                <tr>
+                  <th scope="col">Flight Id</th>
+                  <th scope="col">Flight Number</th>
+                  <th scope="col">Operating Airlines</th>
+                  <th scope="col">Departure City</th>
+                  <th scope="col">Arrival City</th>
+                  <th scope="col">Date Of Departure</th>
+                  <th scope="col">Estimated Departure Time</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                    <td>{{reservationData.reservationFlightId.flightId}}</td>
+                    <td>{{reservationData.reservationFlightId.flightNumber}}</td>
+                    <td>{{reservationData.reservationFlightId.operatingAirlines}}</td>
+                    <td>{{reservationData.reservationFlightId.departureCity}}</td>
+                    <td>{{reservationData.reservationFlightId.arrivalCity}}</td>
+                    <td>{{reservationData.reservationFlightId.dateOfDeparture}}</td>
+                    <td>{{reservationData.reservationFlightId.estimatedDepartureTime}}</td>
+                    </tr>
+
+              </tbody>
+            </table>
+
+        </div>
+      </div>
+    </div>
+</div>
+
